@@ -9,6 +9,9 @@ import {
 
 import styles from "./tailwind.css";
 
+import Nav from "./components/Layout";
+import Layout from "./components/Layout";
+
 export function meta() {
   return { title: "Bob's Burger" };
 }
@@ -27,6 +30,7 @@ export default function App() {
         <Links />
       </head>
       <body>
+        <Layout />
         <Outlet />
         <ScrollRestoration />
         <Scripts />
